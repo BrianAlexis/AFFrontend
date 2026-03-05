@@ -6,7 +6,7 @@ const ConfettiBackground = () => {
         backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(`
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'>
   <rect width='1600' height='900' z-index="-9" fill='#f5f5f5'/>
-  <g opacity='0.4'>
+  <g opacity='0.5'>
     <!-- pequeñas -->
     <ellipse cx='50' cy='50' rx='6' ry='4' fill='#cca500'/>
     <ellipse cx='120' cy='80' rx='8' ry='5' fill='#cca500'/>

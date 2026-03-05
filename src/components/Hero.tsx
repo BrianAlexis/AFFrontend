@@ -3,7 +3,7 @@ import ConfettiBackground from "./ConfettiBackground";
 const Hero = () => {
     return (
         <main id="home">
-            <div className="w-full h-[calc(99vh-6rem)] content-center flex items-center">
+            <div className="w-full h-[calc(98vh-6rem)] content-center flex items-center">
                 <ConfettiBackground />
                 <div className="flex flex-col mx-auto text-center items-center z-10">
                     <h1 className="text-color-primary text-5xl md:text-7xl font-primary font-bold">Andrea Franceschini <br />La Falda</h1>
