@@ -6,7 +6,7 @@ const ConfettiBackground = () => {
         backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(`
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'>
   <rect width='1600' height='900' z-index="-9" fill='#f5f5f5'/>
-  <g opacity='0.5'>
+  <g opacity='0.9'>
     <!-- pequeñas -->
     <ellipse cx='50' cy='50' rx='6' ry='4' fill='#cca500'/>
     <ellipse cx='120' cy='80' rx='8' ry='5' fill='#cca500'/>
@@ -18,7 +18,6 @@ const ConfettiBackground = () => {
     <ellipse cx='600' cy='200' rx='10' ry='6' fill='#cca500'/>
     <ellipse cx='680' cy='50' rx='6' ry='3' fill='#cca500'/>
     <ellipse cx='760' cy='120' rx='8' ry='5' fill='#cca500'/>
-    <ellipse cx='840' cy='90' rx='7' ry='4' fill='#cca500'/>
     <ellipse cx='920' cy='180' rx='6' ry='3' fill='#cca500'/>
     <ellipse cx='1000' cy='60' rx='7' ry='4' fill='#cca500'/>
     <ellipse cx='1080' cy='150' rx='8' ry='5' fill='#cca500'/>
@@ -30,7 +29,6 @@ const ConfettiBackground = () => {
 
     <!-- amorfas -->
     <path d='M600 640c12 8 28 6 36-6s-2-30-16-34-34 6-36 18 2 14 16 22z' fill='#cca500'/>
-    <path d='M830 520c10 6 20 5 26-4s-1-20-10-24-24 5-26 13 1 10 10 15z' fill='#cca500'/>
     <path d='M1020 720c14 9 26 8 32-5s-4-26-16-30-30 5-32 15 2 12 16 20z' fill='#cca500'/>
     <path d='M145 480c9 6 18 5 22-3s-1-18-8-21-18 4-20 10 0 8 6 14z' fill='#cca500'/>
     <path d='M1380 560c11 7 20 6 24-4s-2-20-10-23-20 4-22 11 0 9 8 16z' fill='#cca500'/>
@@ -43,7 +41,6 @@ const ConfettiBackground = () => {
     <path d='M400 500c10 6 22 5 26-5s-2-22-12-26-24 5-26 14 2 12 12 17z' fill='#cca500'/>
     <path d='M600 200c8 6 18 4 22-3s-2-18-10-20-20 3-22 10 2 8 10 13z' fill='#cca500'/>
     <path d='M800 650c12 8 24 7 28-5s-3-24-12-28-24 6-28 14 2 10 12 19z' fill='#cca500'/>
-    <path d='M1000 400c8 5 16 4 20-3s-1-16-8-18-18 3-20 8 0 6 8 13z' fill='#cca500'/>
     <path d='M1150 550c10 7 20 6 24-4s-2-20-12-23-22 5-24 12 2 9 12 15z' fill='#cca500'/>
     <path d='M1300 300c8 6 18 5 22-4s-2-18-10-20-20 4-22 12 2 8 10 12z' fill='#cca500'/>
     <path d='M1400 750c12 8 26 7 30-6s-3-26-12-30-26 6-30 14 2 12 12 20z' fill='#cca500'/>
