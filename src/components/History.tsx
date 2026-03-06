@@ -1,3 +1,7 @@
+'use client';
+
+import { AnimatedSection } from './AnimatedSection';
+
 const History = () => {
     return (
         <section id="history" className="bg-background">
@@ -25,10 +29,15 @@ const History = () => {
           after:[clip-path:polygon(100%_0,100%_120%,0_100%)]
         ">
                 <div className="flex flex-col items-center text-center max-w-4xl mx-auto px-4">
-                    <h2 className="text-color-tertiary text-5xl lg:text-6xl font-primary font-bold pb-8">Nuestra Historia</h2>
-                    <p className="text-color-tertiary text-xl md:text-2xl opacity-90">En <span className="font-bold text-color-primary">Andrea&nbsp;Franceschini</span> creemos que cada momento especial merece una celebración única. Con años de experiencia en pastelería artesanal, nos dedicamos a crear delicias que no solo deleitan el paladar, sino que también crean recuerdos inolvidables.
-                        Utilizamos ingredientes de primera calidad y técnicas tradicionales para garantizar que cada producto que sale de nuestro horno sea excepcional.</p>
-
+                    <AnimatedSection animation="fade-in-up">
+                        <h2 className="text-color-tertiary text-5xl lg:text-6xl font-primary font-bold pb-8">Nuestra Historia</h2>
+                    </AnimatedSection>
+                    <AnimatedSection animation="fade-in-up" delay={0.15}>
+                        <p className="text-color-tertiary text-xl md:text-2xl opacity-90">
+                            En <span className="font-bold text-color-primary">Andrea&nbsp;Franceschini</span> creemos que cada momento especial merece una celebración única. Con años de experiencia en pastelería artesanal, nos dedicamos a crear delicias que no solo deleitan el paladar, sino que también crean recuerdos inolvidables.
+                            Utilizamos ingredientes de primera calidad y técnicas tradicionales para garantizar que cada producto que sale de nuestro horno sea excepcional.
+                        </p>
+                    </AnimatedSection>
                 </div>
             </div>
         </section>

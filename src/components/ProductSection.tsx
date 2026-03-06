@@ -37,10 +37,10 @@ export default function ProductSection({ productsArray, categorias }: { products
                             key={index}
                             onClick={() => setActiveCategory(category)}
                             className={`
-                                w-full text-left py-2 px-4 rounded-lg transition duration-300 text-base cursor-pointer
+                                w-full text-left py-2 px-4 rounded-lg transition-all duration-300 text-base cursor-pointer
                                 ${category === activeCategory
-                                    ? 'bg-text-primary text-white font-semibold shadow-md'
-                                    : 'text-color-secondary  hover:bg-teal-100'
+                                    ? 'bg-text-primary text-white font-semibold shadow-md scale-[1.02]'
+                                    : 'text-color-secondary hover:bg-teal-100 hover:translate-x-1'
                                 }
                             `}
                         >
@@ -78,7 +78,7 @@ export default function ProductSection({ productsArray, categorias }: { products
                             : menorPrecio;
 
                     return (
-                        <div key={id} className="max-w-sm bg-background-card border border-gray-400 rounded-lg shadow-lg relative">
+                        <div key={id} className="max-w-sm bg-background-card border border-gray-400 rounded-lg shadow-lg relative hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
                             <div className="absolute top-2 left-2 z-10 flex flex-wrap gap-2">
                                 {categorias && Array.isArray(categorias) && categorias.map((cat: Categoria) => (
@@ -93,12 +93,12 @@ export default function ProductSection({ productsArray, categorias }: { products
 
                             <Link href={`/productos/${slug}`}>
                                 {imageUrl ? (
-                                    <div className="relative h-48 w-full rounded-t-lg overflow-hidden">
+                                    <div className="relative h-48 w-full rounded-t-lg overflow-hidden group">
                                         <Image
                                             src={imageUrl}
                                             alt={titulo || 'Producto'}
                                             fill
-                                            className="object-cover"
+                                            className="object-cover transition-transform duration-300 group-hover:scale-105"
                                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                         />
                                     </div>
@@ -144,7 +144,7 @@ export default function ProductSection({ productsArray, categorias }: { products
                                     </p>
 
                                     <Link href={`/productos/${slug}`}
-                                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-color-primary hover:bg-color-primary-hover rounded-lg transition duration-300 gap-1.5">
+                                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-color-primary hover:bg-color-primary-hover hover:scale-105 active:scale-95 rounded-lg transition-all duration-300 gap-1.5">
                                         Comprar
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                             viewBox="0 0 24 24" fill="currentColor"

@@ -35,16 +35,16 @@ const Header = () => {
                 </Link>
 
                 <nav className="gap-12 text-white font-secondary cursor-pointer hidden md:flex">
-                    <Link href="/#home" className="text-white border-b border-transparent hover:underline underline-offset-6">Inicio</Link>
-                    <Link href="/#history" className="text-white border-b border-transparent hover:underline underline-offset-6">Historia</Link>
-                    <Link href="/#products" className="text-white border-b border-transparent hover:underline underline-offset-6">Productos</Link>
-                    <Link href="/#contact" className="text-white border-b border-transparent hover:underline underline-offset-6">Contacto</Link>
+                    <Link href="/#home" className="text-white border-b border-transparent hover:underline underline-offset-6 transition-all duration-300 hover:opacity-80">Inicio</Link>
+                    <Link href="/#history" className="text-white border-b border-transparent hover:underline underline-offset-6 transition-all duration-300 hover:opacity-80">Historia</Link>
+                    <Link href="/#products" className="text-white border-b border-transparent hover:underline underline-offset-6 transition-all duration-300 hover:opacity-80">Productos</Link>
+                    <Link href="/#contact" className="text-white border-b border-transparent hover:underline underline-offset-6 transition-all duration-300 hover:opacity-80">Contacto</Link>
                 </nav>
 
                 <div className="flex items-center gap-4">
                     <button
                         onClick={toggleCart}
-                        className="relative flex gap-4 text-white cursor-pointer hover:text-background transition duration-300"
+                        className="relative flex gap-4 text-white cursor-pointer hover:text-background hover:scale-110 transition-all duration-300"
                         aria-label="Abrir carrito"
                     >
 
